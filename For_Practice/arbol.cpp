@@ -36,7 +36,7 @@ Nodo::~Nodo(){
 
 class Arbol{
 private:
-    Nodo *padre;
+    Nodo *root;
 public:
     Arbol();
     ~Arbol();
@@ -46,14 +46,14 @@ public:
 };
 
 Arbol::Arbol(){
-    padre = nullptr;
+    root = nullptr;
 }
 
 void Arbol::insertar(int elem){
     Nodo *temp = new Nodo(elem);
-    
-    if(padre)
-        padre = temp;
+
+    if(root)
+        root = temp;
     else{
         while(temp != nullptr){
             

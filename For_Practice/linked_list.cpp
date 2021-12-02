@@ -41,7 +41,6 @@ LinkedList::LinkedList(){
 }
 
 void LinkedList::insert(int nuevo, int pos){
-    cout<<"Size: "<<size<<endl;
     Nodo *node = new Nodo(nuevo);
 
     //si la posicion es 0, o no existen elementos en la lista
@@ -95,13 +94,13 @@ void LinkedList::print(){
 }
 
 int main(){
-    Nodo a(1);
-    cout<<a.print()<<endl;
 
     LinkedList lista;
     lista.insert(1, 0);
     lista.insert(2, 1);
     lista.insert(3, 1);
     lista.insert(4, 32);
+    lista.insert(12, 12);
+    lista.print();
 
 }

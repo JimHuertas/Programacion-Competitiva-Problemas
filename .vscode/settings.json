@@ -63,6 +63,8 @@
         "xlocinfo": "cpp",
         "xlocnum": "cpp",
         "xmemory": "cpp",
-        "xtr1common": "cpp"
+        "xtr1common": "cpp",
+        "__tree": "cpp",
+        "bitset": "cpp"
     }
 }
